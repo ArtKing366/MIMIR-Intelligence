@@ -1,0 +1,110 @@
+# ============================================================
+# OpsPilot — .gitignore
+# ============================================================
+
+# --- Ignore all project README files (at any directory level) ---
+README
+README.*
+README_*
+**/README
+**/README.*
+**/README_*
+OpsPilot_README_IMPLEMENTATION.md
+
+# Also cover lowercase variants
+readme
+readme.*
+readme_*
+**/readme
+**/readme.*
+**/readme_*
+
+# --- Environment variables and secrets ---
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+secrets.*
+!secrets.example
+
+# --- Python virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Python cache and compiled files ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# --- Python packaging / build ---
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+
+# --- Test and quality tool caches ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.dmypy.json
+.ruff_cache/
+.hypothesis/
+
+# --- Logs and temporary files ---
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# --- Node.js / React / Vite ---
+node_modules/
+frontend/node_modules/
+frontend/dist/
+.npm/
+.turbo/
+.cache/
+*.tsbuildinfo
+
+# --- Local databases and database exports ---
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.bak.sql
+
+# --- Local application data and uploaded files ---
+data/
+storage/
+uploads/
+private_uploads/
+
+# --- Docker persistent data ---
+postgres_data/
+redis_data/
+docker-data/
+
+# --- IDE / editor local state ---
+.idea/
+.vscode/
+
+# --- OS-specific files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+.Trashes/
+ehthumbs.db
