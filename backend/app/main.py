@@ -1,9 +1,13 @@
 from fastapi import FastAPI
 
+from app.core.config import settings
+
+
 app = FastAPI(
-    title="MIMIR Intelligence API",
+    title=settings.app_name,
     description="AI-powered IT Service Desk & Incident Intelligence Platform",
     version="0.1.0",
+    debug=settings.debug,
 )
 
 
