@@ -13,7 +13,7 @@ class Settings(BaseSettings):
 
     frontend_url: str = "http://localhost:5173"
 
-    database_url: str | None = None
+    database_url: str
 
     jwt_secret_key: SecretStr
 
